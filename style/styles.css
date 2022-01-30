@@ -181,10 +181,51 @@ small {
   line-height: 24px;
 }
 
+/* modal */
+.modal_content {
+  padding: 30px 30px;
+}
+
+.modal_project_title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.modal_project_desc {
+}
+
+.modal_img {
+  width: 1300px;
+  height: 700px;
+  display: block;
+  margin: 50px auto;
+}
+
 @media screen and (max-width:1024px) {
   .card-list {
     display: grid;
     grid-template-columns: repeat(1, minmax(450px, auto));
     column-gap: 2%;
   }
+}
+
+
+/* javascript */
+.popup {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  width: 80vw;
+  height: 90vh;
+  background-color: #fff;
+  overflow: auto;
+  border: 1px solid #ADADAD;
+}
+
+.modal {
+  display: none;
 }
