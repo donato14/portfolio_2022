@@ -9,6 +9,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Inconsolata:wght@400;900&family=Noto+Sans+KR:wght@400;700;900&display=swap"
     rel="stylesheet">
+  <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="./style/reset.css">
   <link rel="stylesheet" href="./style/styles.css">
 </head>
@@ -84,16 +85,33 @@
             </p>
             <div class="modal">
               <div class="modal_content">
+                <small class="modal_notice">현재 창 클릭시 창이 종료됩니다.</small>
                 <h1 class="modal_project_title">Portfolio_2021</h1>
                 <p class="modal_porject_desc">
-                  기본적으로 다른 프로젝트인 "apple clone" 에서 영감을 얻어 만든 포트폴리오입니다.<br>
-                  자바스크립트를 처음 배우던 때에 스크롤 애니메이션 등 다양한 기술들을 사용해 볼 수 있어 좋은 기회이기는 하였으나<br>
-                  배움이 깊지 않던 시기에 많은 것을 소화하기에는 어려움이 있었습니다. 이해하려 노력하였고 이 프로젝트를 진행하며 JS 실력이 많이 향상 된것도 사실이나 <br>
+                  기본적으로 다른 프로젝트인 "apple clone" 에서 영감을 얻어 만든 포트폴리오입니다.<br><br>
+                  자바스크립트를 처음 배우던 때에 스크롤 애니메이션 등 다양한 기술들을 사용해 볼 수 있어 좋은 기회이기는 하였으나,<br>
+                  배움이 깊지 않던 시기에 많은 것을 소화하기에는 어려움이 있었습니다. 이해하려 노력하였고 이 프로젝트를 진행하며 JS 실력이 많이 향상 된것은 사실이나 <br>
                   인터랙티브한 요소가 많아 포트폴리오용으로서는 적합하지 않다는 판단하에 2022년도가 되자마자 새로운 정적인 포트폴리오를 제작하기로 마음먹었습니다.
                 </p>
-                <img class="modal_img" src="./assets/portfoilo_2021/1.png" alt="포트폴리오 내부 사진">
+                <p class="modal_project_stack">
+                  사용 기술 : <br>
+                  <div>
+                    <img class="modal_banner"
+                      src="https://img.shields.io/badge/HTML5-E34F26?style=border-square&logo=HTML5&logoColor=white" />
+                    <img class="modal_banner"
+                      src="https://img.shields.io/badge/CSS3-1572B6?style=border-square&logo=CSS3&logoColor=white" />
+                    <img class="modal_banner"
+                      src="https://img.shields.io/badge/JavaScript-F7DF1E?style=border-square&logo=JavaScript&logoColor=white" />
+                  </div>
+                </p>
+                <img class="modal_img" src="./assets/portfoilo_2021/portfolio_2.gif" alt="포트폴리오 내부 사진">
+                <p class="modal_porject_desc">포트폴리오 탭의 화면 구성입니다. Grid 를 사용해 2열로 반복하게 구성하였으며, JS를 이용해 마우스 오버시에 트랜지션 효과를
+                  적용해 애니메이션화 하였습니다.</p>
+
                 <img class="modal_img" src="./assets/portfoilo_2021/2.png" alt="포트폴리오 내부 사진2">
-                <p>hello guyssssss</p>
+                <p class="modal_porject_desc">개인 사진과 함께 인적사항을 적은 페이지입니다. 인스타그램 링크와 깃허브 링크를 첨부하여 직접 연락하기에도 용이하며 작업물들을
+                  보기에도 적합하다 생각합니다.</p>
+                <small class="modal_notice">현재 창 클릭시 창이 종료됩니다.</small>
               </div>
             </div>
           </div>
@@ -173,16 +191,21 @@
     </div>
 
   </section>
+  <footer>
+    <p class="footer_p">&copy; Made By Kujun Kang. 2022</p>
+  </footer>
 
   <script>
     const $card_item = document.querySelectorAll('.card-item');
     const $modal = document.querySelectorAll('.modal');
+    const $body = document.querySelector('body');
 
 
     for (let i = 0; i < $card_item.length; i++) {
       $card_item[i].addEventListener('click', () => {
         $modal[i].classList.toggle('modal');
         $modal[i].classList.toggle('popup');
+        $body.classList.toggle('body_scroll');
       });
     };
   </script>
