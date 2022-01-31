@@ -177,7 +177,7 @@ small {
 }
 
 .in-desc {
-  font-size: 18px;
+  font-size: 16px;
   color: #444;
   font-family: 'IBM Plex Sans', sans-serif;
   width: 300px;
@@ -215,7 +215,7 @@ footer {
   margin-bottom: 50px;
 }
 
-.modal_porject_desc {
+.modal_project_desc {
   margin-bottom: 30px;
   font-family: 'Spoqa Han Sans Neo', 'sans-serif';
   line-height: 26px;
@@ -228,7 +228,7 @@ footer {
 }
 
 .modal_img {
-  width: 70vw;
+  width: 60vw;
   height: 60vh;
   display: block;
   margin: 50px auto;
@@ -239,6 +239,10 @@ footer {
 }
 
 .modal_banner:nth-child(3) {
+  margin-left: -5px;
+}
+
+.modal_banner:nth-child(4) {
   margin-left: -5px;
 }
 
