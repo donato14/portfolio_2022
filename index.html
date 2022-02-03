@@ -157,7 +157,7 @@
           </div>
         </li>
         <li class="card-item">
-          <figure class="card-image" style="background-image: url(./assets/apple_clone/apple_clone_home.png);">
+          <figure class="card-image" style="background-image: url(./assets/apple_clone/apple_clone_main.png);">
             <img src="" alt="애플클론페이지">
           </figure>
           <div class="card-desc">
@@ -233,8 +233,8 @@
           </div>
         </li>
         <li class="card-item">
-          <figure class="card-image" style="background-image: url(./assets/momentum2.gif);">
-            <img src="" alt="모멘텀 클론">
+          <figure class="card-image" style="background-image: url(./assets/momentum/momentum_img.png);">
+            <img src="" alt=" 모멘텀 클론">
           </figure>
           <div class="card-desc">
             <a href="#!">
@@ -244,13 +244,34 @@
               Chrome app "Momentum" clone.
             </p>
             <div class="modal">
-              <h1 class="modal_project_title">Practice JavaScript to clone Momentum apps</h1>
-              <p>hello guy!!!!ssssss</p>
+              <div class="modal_content">
+                <small class="modal_notice">현재 창 클릭시 창이 종료됩니다.</small>
+                <h1 class="modal_project_title">Practice JavaScript to clone Momentum apps</h1>
+                <img class="modal_img" src="./assets/momentum/momentum2.gif" alt="모멘텀 gif">
+                <p class="modal_project_stack">
+                  사용 기술 : <br>
+                  <div>
+                    <img class="modal_banner"
+                      src="https://img.shields.io/badge/HTML5-E34F26?style=border-square&logo=HTML5&logoColor=white" />
+                    <img class="modal_banner"
+                      src="https://img.shields.io/badge/CSS3-1572B6?style=border-square&logo=CSS3&logoColor=white" />
+                    <img class="modal_banner"
+                      src="https://img.shields.io/badge/JavaScript-F7DF1E?style=border-square&logo=JavaScript&logoColor=white" />
+                  </div>
+                </p>
+                <p class="modal_project_desc">
+                  자바스크립트를 공부하며 만든 클론 페이지로 로컬스토리지를 사용해 로그인과 Todo List를 제작하였습니다.<br />
+                  새로고침을 할 때마다, 배경화면과 하단의 명언 한 마디가 변경되게 됩니다.<br />
+                  웹 API를 사용해 현재 날씨를 좌표에 맞게 표시하게 하였습니다.
+                </p>
+                <small class="modal_notice">현재 창 클릭시 창이 종료됩니다.</small>
+              </div>
             </div>
           </div>
+
         </li>
         <li class="card-item">
-          <figure class="card-image" style="background-image: url(./assets/java-project.gif);">
+          <figure class="card-image" style="background-image: url(./assets/BankProject/Bank_main.png);">
             <img src="" alt="쌍용은행 자바콘솔프로젝트">
           </figure>
           <div class="card-desc">
@@ -261,10 +282,31 @@
               Use Java to create a console for banking services.
             </p>
             <div class="modal">
-              <h1 class="modal_project_title">Java console project</h1>
-              <p>he!!!llo guyssssss</p>
+              <div class="modal_content">
+                <small class="modal_notice">현재 창 클릭시 창이 종료됩니다.</small>
+                <h1 class="modal_project_title">Java console project</h1>
+                <img class="modal_flex_content" src="./assets/BankProject/java-project.gif" alt="쌍용은행gif">
+                <p class="modal_project_desc">
+                  교육센터에 입교한 뒤 첫 프로젝트로써 자바언어를 사용한 콘솔 프로젝트입니다.
+                </p>
+                <p class="modal_project_stack">
+                  사용 기술 : <br>
+                  <div>
+                    <img class="modal_banner"
+                      src="https://img.shields.io/badge/Java-FF7800?style=border-square&logo=Java&logoColor=white" />
+                  </div>
+                </p>
+                <img class="modal_img_bankproject" src="./assets/BankProject/mypart.png" alt="계좌해지">
+                <img class="modal_img_bankproject" src="./assets/BankProject/mypart-1.png" alt="계좌해지">
+                <p class="modal_project_desc">
+                  계좌해지 파트입니다. 로그인한 계정의 id를 csv 파일에서 찾아내 해당 id에 연계되어 있는 계좌를 찾아 출력한 뒤, <br />
+                  해지하는 기능을 구현 하였습니다. <br />
+                  해지를 원하는 계좌의 번호를 입력하면 해당 계좌에 잔액을 옮길 계좌를 선택하면 잔액이 옮겨지고 계좌가 삭제되는 알고리즘을 가지고 있습니다.
+                </p>
+                <img class="modal_img_bankproject" src="./assets/BankProject/mypart2.png" alt="적금">
+                <img class="modal_img_bankproject" src="./assets/BankProject/mypart2-1.png" alt="적금">
+              </div>
             </div>
-          </div>
         </li>
       </ul>
     </div>
@@ -273,21 +315,7 @@
   <footer>
     <p class="footer_p">&copy; Made By Kujun Kang. 2022</p>
   </footer>
-
-  <script>
-    const $card_item = document.querySelectorAll('.card-item');
-    const $modal = document.querySelectorAll('.modal');
-    const $body = document.querySelector('body');
-
-
-    for (let i = 0; i < $card_item.length; i++) {
-      $card_item[i].addEventListener('click', () => {
-        $modal[i].classList.toggle('modal');
-        $modal[i].classList.toggle('popup');
-        $body.classList.toggle('body_scroll');
-      });
-    };
-  </script>
+  <script src="./script.js"></script>
 </body>
 
 </html>

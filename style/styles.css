@@ -256,6 +256,14 @@ footer {
   margin: 50px auto;
 }
 
+.modal_img_bankproject {
+  display: inline;
+  
+  margin: 50px 100px;
+  width: 35%;
+  height: 35%;
+}
+
 @media screen and (max-width:1024px) {
   .card-list {
     display: grid;
