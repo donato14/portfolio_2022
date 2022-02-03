@@ -246,6 +246,16 @@ footer {
   margin-left: -5px;
 }
 
+.modal_flex_content {
+  display: block;
+  margin: 50px auto;
+}
+
+.modal_flex_content_mobile {
+  display: block;
+  margin: 50px auto;
+}
+
 @media screen and (max-width:1024px) {
   .card-list {
     display: grid;
