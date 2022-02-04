@@ -212,7 +212,7 @@ footer {
 .modal_project_title {
   font-size: 26px;
   font-weight: 700;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .modal_project_desc {
@@ -220,6 +220,7 @@ footer {
   font-family: 'Spoqa Han Sans Neo', 'sans-serif';
   line-height: 26px;
   font-size: 16px;
+  padding: 0px 100px;
 }
 
 .modal_project_stack {
@@ -257,7 +258,7 @@ footer {
 }
 
 .modal_img_bankproject {
-  display: inline;
+  display: inline-block;
   
   margin: 50px 100px;
   width: 35%;
