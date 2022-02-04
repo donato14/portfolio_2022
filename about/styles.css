@@ -1,0 +1,56 @@
+
+.MyDesc {
+  background-color: #000;
+  width: 100vw;
+  min-height: 85vh;
+  padding-bottom: 50px;
+}
+
+.about_content {
+  padding-top: 50px;
+}
+
+
+.about_description {
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+}
+
+.my_picture {
+  height: 600px;
+  width: 450px;
+  margin-left: 15px;
+}
+
+.my_introduce {
+  margin-left: 70px;
+  padding-right: 100px;
+}
+
+.my_title {
+  margin-top: 30px;
+  color: #adadad;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.my_subtitle {
+  color: #fff;
+  font-size: 16px;
+  line-height: 28px;
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+  margin-bottom: 30px;
+}
+
+.my_subtitle > strong {
+  font-weight: 900;
+}
+
+.my_desc {
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+  line-height: 24px;
+}
