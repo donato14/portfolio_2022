@@ -147,6 +147,7 @@ small {
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 2rem;
+  cursor: pointer;
 }
 .card-image {
 	height: 0;
