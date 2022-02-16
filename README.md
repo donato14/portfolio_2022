@@ -22,8 +22,9 @@
   - CSS3
   - JavaScript
 
-<br />
+
 ## Feature
+
 <img src="./assets/readme/main.png">
 <br />
 1. 메인화면 입니다. 프로젝트 나열은 Grid 를 사용하여 출력하였습니다.<br />
