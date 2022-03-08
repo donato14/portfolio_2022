@@ -111,9 +111,15 @@ a:visited {
   margin-top: 1em;
 }
 
+.sentense-4 {
+  color: #444;
+  font-size: 14px;
+  margin-top: 0.3em;
+}
+
 .project {
   margin-top: 45px;
-  color: #ADADAD;
+  color: #f3f3f3;
   font-size: 24px;
   font-weight: 900;
 }
